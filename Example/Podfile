@@ -1,0 +1,20 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/TuyaInc/TuyaPublicSpecs.git'
+
+platform :ios, '9.0'
+
+target 'TuyaSmartIPCDemo_Example' do
+  
+  pod 'TuyaSmartHomeKit'
+  pod 'TuyaSmartCameraKit'
+  pod "TuyaCameraUIKit"
+  pod 'TuyaSmartCloudServiceBizBundle'
+  
+  pod 'SVProgressHUD'
+   
+  target 'TuyaSmartIPCDemo_Tests' do
+    inherit! :search_paths
+
+
+  end
+end
