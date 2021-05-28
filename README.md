@@ -70,8 +70,8 @@ Refer to Details: [Tuya Smart Camera iOS SDK Doc](https://developer.tuya.com/cn/
 
 The following is the preview and playback effect pictures:
 
-![Preview](https://images.tuyacn.com/fe-static/docs/img/01402207-902a-4627-aa98-8cc5d90abeb1.jpeg)
-![Playback](https://images.tuyacn.com/fe-static/docs/img/e9f9b009-6202-4312-8c7c-e07f62105b4b.png)
+![Preview](https://images.tuyacn.com/fe-static/docs/img/2612c530-3518-4761-a941-7d9e8c90f84d.jpeg)
+![Playback](https://images.tuyacn.com/fe-static/docs/img/099b646a-93ab-490f-b618-5e84eafd7fbd.jpeg)
 
 ## ChangeLog
 
