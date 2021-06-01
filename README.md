@@ -1,24 +1,24 @@
 # TuyaSmartCamera
 
-[中文版](./README-zh.md) | [English](./README.md)
+[English](./README.md) | [中文版](./README-zh.md)
 
 ---
 
-## Features Overview
+## Overview
 
-Tuya Smart Camera SDK provides the interface package for the communication with remote camera device to accelerate the application development process, including the following features:
+Tuya Smart Camera SDK provides the interface package for communication with remote cameras to accelerate the application development process. The following features are supported:
 
-* Preview the picture taken by the camera
-* Play back recorded video of the remote camera
+* Preview images that are taken by remote cameras
+* Play back video records from remote cameras
 * Record video
-* Talk to the remote camera
+* Speak to the remote camera
 * Doorbell call service
 
-## Rapid Integration
+## Fast integration
 
-#### Using CocoaPods integration（System version 9.0 or above is supported）
+#### Use CocoaPods for integration (system version 9.0 or later)
 
-Add the following line to your Podfile:
+Add the following code block to your Podfile:
 
 ```ruby
 platform :ios, '9.0'
@@ -33,21 +33,21 @@ target 'your_target_name' do
 end
 ```
 
-TuyaSmartCameraKit is not support p2p 1.0 by default,  if you want integrate p2p 1.0 camera, you could add this code:  `pod 'TuyaSmartCameraT'` .
+TuyaSmartCameraKit does not support peer-to-peer (P2P) 1.0 by default. To integrate smart cameras that support P2P 1.0, add this code:  `pod 'TuyaSmartCameraT'` .
 
-Execute command ```pod update``` in the project's root directory to begin integration.
+Run the command ```pod update``` in the root directory of the project to implement the integration.
 
-For the instructions of CocoaPods, please refer to : [CocoaPods Guides](https://guides.cocoapods.org/)
+For more information about CocoaPods, see [CocoaPods Guides](https://guides.cocoapods.org/).
 
-## Doc
+## Reference
 
-Refer to Details: [Tuya Smart Camera iOS SDK Doc](https://developer.tuya.com/cn/docs/app-development/ipccamera?id=Ka5vexydbwua5)
+For more information, see [IPC SDK](https://developer.tuya.com/en/docs/app-development/ipccamera?id=Ka5vexydbwua5).
 
 ## Demo
 
-1. Clone this repo to local.
+1. Clone this repo to your local computer.
 
-2. Open terminal, run these command:
+2. Open the terminal and run the following sample code:
 
    ```ruby
    cd tuyasmart_ipc_sdk_demo/Example/
@@ -56,24 +56,23 @@ Refer to Details: [Tuya Smart Camera iOS SDK Doc](https://developer.tuya.com/cn/
 
 3. Open `TuyaSmartIPCDemo.xcworkspace`.
 
-4. Refer to [Preparation work](https://developer.tuya.com/cn/docs/app-development/preparation?id=Ka69nt983bhh5), add the security image named `t_s.bmp` to your project
+4. Add the security image named `t_s.bmp` to your project. For more information, see [Preparation](https://developer.tuya.com/en/docs/app-development/preparation?id=Ka69nt983bhh5).
 
-5. Modify the `bundleId` as your bundleId. 
+5. Set `bundleId` to your bundle ID. 
 
-6. Open `AppDelegate.m`, complement the `appKey`, `appSecret`.
+6. Open `AppDelegate.m` and set `appKey` and `appSecret`.
 
-7. If you need to integrate modules purchased from cloud storage services, you need to configure the `ty_custom_config.json` file. In the file, the `appId` is obtained from the browser URL on the SDK configuration page, for example, the URL is `https://iot.tuya.com/oem/sdk?id=xxx`, where xxx is your `appId`. `tyAppKey` is your AppKey and ``appScheme`` is your channel identifier.
+7. To integrate modules that are purchased from the cloud storage service, configure the `ty_custom_config.json` file. In the file, the value of `appId` is obtained from the URL of the SDK configuration page. For example, if the URL is `https://iot.tuya.com/oem/sdk?id=xxx`, `xxx` indicates the value of `appId`. `tyAppKey` is your AppKey and `appScheme` is your channel identifier.
 
-8. Run project. Since video decode with hardware decoding, so please debug with iPhone.
+8. Run the project. Video decoding is supported by smart cameras. You can debug the code with your iPhone.
 
-## Running Result
+## Running result
 
-The following is the preview and playback effect pictures:
+The following figures show the image preview and record playback features.
 
-![Preview](https://images.tuyacn.com/fe-static/docs/img/2612c530-3518-4761-a941-7d9e8c90f84d.jpeg)
-![Playback](https://images.tuyacn.com/fe-static/docs/img/099b646a-93ab-490f-b618-5e84eafd7fbd.jpeg)
+<img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/1622463756b7bffcd700c.png" alt="Preview" style="zoom: 30%;" /><img src="https://airtake-public-data-1254153901.cos.ap-shanghai.myqcloud.com/content-platform/hestia/1622463887559781b5517.png" alt="Playback" style="zoom: 30%;" />
 
-## ChangeLog
+## Change Log
 
-[ChangeLog](https://developer.tuya.com/cn/docs/app-development/versionrecord?id=Ka5vox6pd09cn)
+For more information, see [Change Log](https://developer.tuya.com/en/docs/app-development/versionrecord?id=Ka5vox6pd09cn).
 
