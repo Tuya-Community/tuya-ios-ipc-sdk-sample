@@ -70,8 +70,8 @@ For more information, see [IPC SDK](https://developer.tuya.com/en/docs/app-devel
 
 The following figures show the image preview and record playback features.
 
-![Preview](https://images.tuyacn.com/fe-static/docs/img/b0d0c34c-5ec4-4dc3-bdc7-25d030be9454.png)
-![Playback](https://images.tuyacn.com/fe-static/docs/img/1fd97e98-25a9-4a4f-a10f-72bea17ca9ee.png)
+![Preview](https://images.tuyacn.com/fe-static/docs/img/683dec80-d7dd-4799-9619-52d6358f2867.png)
+![Playback](https://images.tuyacn.com/fe-static/docs/img/18f1b9d7-4c13-4dce-a990-bcc110e74065.png)
 
 ## Change Log
 
