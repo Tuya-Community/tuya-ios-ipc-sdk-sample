@@ -71,7 +71,8 @@ CocoaPods的使用请参考：[CocoaPods Guides](https://guides.cocoapods.org/)
 
 以下为预览、回放的效果图：
 
-![预览](https://images.tuyacn.com/fe-static/docs/img/978b7b60-8f18-4f64-8de0-849fe70569da.jpeg) ![回放](https://images.tuyacn.com/fe-static/docs/img/08030fdd-fb1e-49f3-9bb3-98a9ad958083.jpeg)
+![预览](https://images.tuyacn.com/fe-static/docs/img/978b7b60-8f18-4f64-8de0-849fe70569da.jpeg)
+![回放](https://images.tuyacn.com/fe-static/docs/img/08030fdd-fb1e-49f3-9bb3-98a9ad958083.jpeg)
 
 ## 版本更新记录
 
