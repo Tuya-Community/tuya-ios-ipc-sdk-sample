@@ -19,9 +19,15 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		7D4511D0270FE4F500F47F78 /* CameraCollectionPointListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4511CF270FE4F500F47F78 /* CameraCollectionPointListView.m */; };
+		7D4511D5270FE77000F47F78 /* CameraCollectionPointListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4511D4270FE77000F47F78 /* CameraCollectionPointListCell.m */; };
+		7D4511DA2710203400F47F78 /* CameraCruiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4511D92710203400F47F78 /* CameraCruiseView.m */; };
+		7D4511DF27104A7C00F47F78 /* CameraCruiseSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4511DE27104A7C00F47F78 /* CameraCruiseSelectView.m */; };
 		7D5492D026565C82008C5AC4 /* CameraDoorbellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5492CF26565C82008C5AC4 /* CameraDoorbellViewController.m */; };
 		7D5492D526566499008C5AC4 /* ty_camera_hangup@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D5492D326566499008C5AC4 /* ty_camera_hangup@3x.png */; };
 		7D5492D626566499008C5AC4 /* ty_camera_hangup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D5492D426566499008C5AC4 /* ty_camera_hangup@2x.png */; };
+		7D55881B2702C8AD00D7B38A /* CameraBottomSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D55881A2702C8AD00D7B38A /* CameraBottomSwitchView.m */; };
+		7D558820270303F800D7B38A /* CameraPTZControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D55881F270303F800D7B38A /* CameraPTZControlView.m */; };
 		7D8E19832633AE39002D481F /* UIView+CameraAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8E18F42633AE39002D481F /* UIView+CameraAdditions.m */; };
 		7D8E198A2633AE39002D481F /* tysmart_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D8E19072633AE39002D481F /* tysmart_selected@3x.png */; };
 		7D8E198B2633AE39002D481F /* IPCLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D8E19082633AE39002D481F /* IPCLocalizable.strings */; };
@@ -98,6 +104,7 @@
 		7DABC80F2653B5DF00DF5677 /* QRCodeModeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DABC80E2653B5DF00DF5677 /* QRCodeModeTableViewController.m */; };
 		7DABC8142653B6CE00DF5677 /* QRCodeMode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DABC8122653B6CD00DF5677 /* QRCodeMode.storyboard */; };
 		7DABC8272653CD9100DF5677 /* UIImage+TYQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DABC8262653CD9100DF5677 /* UIImage+TYQRCode.m */; };
+		7DBAA9AE271148E30062ECF2 /* CameraCustomTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DBAA9AD271148E30062ECF2 /* CameraCustomTimeView.m */; };
 		7DD1A448265CA09800731F05 /* t_s.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 7DD1A447265CA09700731F05 /* t_s.bmp */; };
 		7DFBEE20263024B7003A5111 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DFBEE1F263024B7003A5111 /* ExternalAccessory.framework */; };
 		7DFBEE7126310B41003A5111 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DFBEE7026310B41003A5111 /* CoreLocation.framework */; };
@@ -172,11 +179,23 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		7D4511CE270FE4F500F47F78 /* CameraCollectionPointListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraCollectionPointListView.h; sourceTree = "<group>"; };
+		7D4511CF270FE4F500F47F78 /* CameraCollectionPointListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraCollectionPointListView.m; sourceTree = "<group>"; };
+		7D4511D3270FE77000F47F78 /* CameraCollectionPointListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraCollectionPointListCell.h; sourceTree = "<group>"; };
+		7D4511D4270FE77000F47F78 /* CameraCollectionPointListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraCollectionPointListCell.m; sourceTree = "<group>"; };
+		7D4511D82710203400F47F78 /* CameraCruiseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraCruiseView.h; sourceTree = "<group>"; };
+		7D4511D92710203400F47F78 /* CameraCruiseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraCruiseView.m; sourceTree = "<group>"; };
+		7D4511DD27104A7C00F47F78 /* CameraCruiseSelectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraCruiseSelectView.h; sourceTree = "<group>"; };
+		7D4511DE27104A7C00F47F78 /* CameraCruiseSelectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraCruiseSelectView.m; sourceTree = "<group>"; };
 		7D4900A126325DAA000D923A /* TuyaCameraSDK */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = TuyaCameraSDK; path = Pods/TuyaCameraSDK/Carthage/Build/iOS/TuyaCameraSDK.framework/TuyaCameraSDK; sourceTree = "<group>"; };
 		7D5492CE26565C82008C5AC4 /* CameraDoorbellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraDoorbellViewController.h; sourceTree = "<group>"; };
 		7D5492CF26565C82008C5AC4 /* CameraDoorbellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraDoorbellViewController.m; sourceTree = "<group>"; };
 		7D5492D326566499008C5AC4 /* ty_camera_hangup@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_camera_hangup@3x.png"; sourceTree = "<group>"; };
 		7D5492D426566499008C5AC4 /* ty_camera_hangup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_camera_hangup@2x.png"; sourceTree = "<group>"; };
+		7D5588192702C8AD00D7B38A /* CameraBottomSwitchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraBottomSwitchView.h; sourceTree = "<group>"; };
+		7D55881A2702C8AD00D7B38A /* CameraBottomSwitchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraBottomSwitchView.m; sourceTree = "<group>"; };
+		7D55881E270303F800D7B38A /* CameraPTZControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraPTZControlView.h; sourceTree = "<group>"; };
+		7D55881F270303F800D7B38A /* CameraPTZControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraPTZControlView.m; sourceTree = "<group>"; };
 		7D8E18F42633AE39002D481F /* UIView+CameraAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CameraAdditions.m"; sourceTree = "<group>"; };
 		7D8E18FD2633AE39002D481F /* CameraViewConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewConstants.h; sourceTree = "<group>"; };
 		7D8E19032633AE39002D481F /* UIView+CameraAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CameraAdditions.h"; sourceTree = "<group>"; };
@@ -277,6 +296,8 @@
 		7DABC8222653C03000DF5677 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/QRCodeMode.strings"; sourceTree = "<group>"; };
 		7DABC8252653CD9100DF5677 /* UIImage+TYQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TYQRCode.h"; sourceTree = "<group>"; };
 		7DABC8262653CD9100DF5677 /* UIImage+TYQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TYQRCode.m"; sourceTree = "<group>"; };
+		7DBAA9AC271148E30062ECF2 /* CameraCustomTimeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraCustomTimeView.h; sourceTree = "<group>"; };
+		7DBAA9AD271148E30062ECF2 /* CameraCustomTimeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraCustomTimeView.m; sourceTree = "<group>"; };
 		7DD1A447265CA09700731F05 /* t_s.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = t_s.bmp; sourceTree = "<group>"; };
 		7DFBEE1E263024B7003A5111 /* TuyaSmartIPCDemo_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TuyaSmartIPCDemo_Example.entitlements; sourceTree = "<group>"; };
 		7DFBEE1F263024B7003A5111 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
@@ -563,6 +584,20 @@
 				7D8E19522633AE39002D481F /* CameraCalendarView.m */,
 				7D8E19512633AE39002D481F /* CameraCloudDayCollectionViewCell.h */,
 				7D8E194B2633AE39002D481F /* CameraCloudDayCollectionViewCell.m */,
+				7D5588192702C8AD00D7B38A /* CameraBottomSwitchView.h */,
+				7D55881A2702C8AD00D7B38A /* CameraBottomSwitchView.m */,
+				7D55881E270303F800D7B38A /* CameraPTZControlView.h */,
+				7D55881F270303F800D7B38A /* CameraPTZControlView.m */,
+				7D4511CE270FE4F500F47F78 /* CameraCollectionPointListView.h */,
+				7D4511CF270FE4F500F47F78 /* CameraCollectionPointListView.m */,
+				7D4511D3270FE77000F47F78 /* CameraCollectionPointListCell.h */,
+				7D4511D4270FE77000F47F78 /* CameraCollectionPointListCell.m */,
+				7D4511D82710203400F47F78 /* CameraCruiseView.h */,
+				7D4511D92710203400F47F78 /* CameraCruiseView.m */,
+				7D4511DD27104A7C00F47F78 /* CameraCruiseSelectView.h */,
+				7D4511DE27104A7C00F47F78 /* CameraCruiseSelectView.m */,
+				7DBAA9AC271148E30062ECF2 /* CameraCustomTimeView.h */,
+				7DBAA9AD271148E30062ECF2 /* CameraCustomTimeView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -677,9 +712,9 @@
 				AFA329A425D0E3500065E54E /* Device Network Configuration */,
 				AFA329A925D0E3500065E54E /* UserManagement */,
 				AFA329B225D0E3500065E54E /* MainTableViewController.h */,
-				AFA329B325D0E3500065E54E /* MainViewController.m */,
 				AFA329B425D0E3500065E54E /* MainTableViewController.m */,
 				AFA329B525D0E3500065E54E /* MainViewController.h */,
+				AFA329B325D0E3500065E54E /* MainViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -687,18 +722,18 @@
 		AFA3298125D0E3500065E54E /* HomeManagement */ = {
 			isa = PBXGroup;
 			children = (
+				AFA3298A25D0E3500065E54E /* Home.h */,
 				AFA3298225D0E3500065E54E /* Home.m */,
 				AFA3298325D0E3500065E54E /* NewHomeTableViewController.h */,
-				AFA3298425D0E3500065E54E /* HomeDetailTableViewController.h */,
-				AFA3298525D0E3500065E54E /* SwitchHomeTableViewController.m */,
-				AFA3298625D0E3500065E54E /* HomeListTableViewController.h */,
-				AFA3298725D0E3500065E54E /* EditHomeTableViewController.m */,
 				AFA3298825D0E3500065E54E /* NewHomeTableViewController.m */,
+				AFA3298425D0E3500065E54E /* HomeDetailTableViewController.h */,
 				AFA3298925D0E3500065E54E /* HomeDetailTableViewController.m */,
-				AFA3298A25D0E3500065E54E /* Home.h */,
+				AFA3298625D0E3500065E54E /* HomeListTableViewController.h */,
 				AFA3298B25D0E3500065E54E /* HomeListTableViewController.m */,
-				AFA3298C25D0E3500065E54E /* SwitchHomeTableViewController.h */,
 				AFA3298D25D0E3500065E54E /* EditHomeTableViewController.h */,
+				AFA3298725D0E3500065E54E /* EditHomeTableViewController.m */,
+				AFA3298C25D0E3500065E54E /* SwitchHomeTableViewController.h */,
+				AFA3298525D0E3500065E54E /* SwitchHomeTableViewController.m */,
 			);
 			path = HomeManagement;
 			sourceTree = "<group>";
@@ -707,14 +742,14 @@
 			isa = PBXGroup;
 			children = (
 				AFA3299325D0E3500065E54E /* Cell */,
-				AFA3298F25D0E3500065E54E /* DeviceDetailTableViewController.m */,
 				AFA3299025D0E3500065E54E /* DeviceControlCellHelper.h */,
-				AFA3299125D0E3500065E54E /* DeviceControlTableViewController.h */,
-				AFA3299225D0E3500065E54E /* DeviceListTableViewController.h */,
-				AFA329A025D0E3500065E54E /* DeviceDetailTableViewController.h */,
-				AFA329A125D0E3500065E54E /* DeviceListTableViewController.m */,
-				AFA329A225D0E3500065E54E /* DeviceControlTableViewController.m */,
 				AFA329A325D0E3500065E54E /* DeviceControlCellHelper.m */,
+				AFA3299125D0E3500065E54E /* DeviceControlTableViewController.h */,
+				AFA329A225D0E3500065E54E /* DeviceControlTableViewController.m */,
+				AFA3299225D0E3500065E54E /* DeviceListTableViewController.h */,
+				AFA329A125D0E3500065E54E /* DeviceListTableViewController.m */,
+				AFA329A025D0E3500065E54E /* DeviceDetailTableViewController.h */,
+				AFA3298F25D0E3500065E54E /* DeviceDetailTableViewController.m */,
 			);
 			path = "Device Management";
 			sourceTree = "<group>";
@@ -722,18 +757,18 @@
 		AFA3299325D0E3500065E54E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				AFA3299425D0E3500065E54E /* SwitchTableViewCell.m */,
-				AFA3299525D0E3500065E54E /* EnumTableViewCell.m */,
-				AFA3299625D0E3500065E54E /* LabelTableViewCell.m */,
-				AFA3299725D0E3500065E54E /* DeviceStatusBehaveCell.m */,
-				AFA3299825D0E3500065E54E /* SliderTableViewCell.m */,
-				AFA3299925D0E3500065E54E /* StringTableViewCell.m */,
 				AFA3299A25D0E3500065E54E /* SwitchTableViewCell.h */,
+				AFA3299425D0E3500065E54E /* SwitchTableViewCell.m */,
 				AFA3299B25D0E3500065E54E /* EnumTableViewCell.h */,
+				AFA3299525D0E3500065E54E /* EnumTableViewCell.m */,
 				AFA3299C25D0E3500065E54E /* SliderTableViewCell.h */,
+				AFA3299825D0E3500065E54E /* SliderTableViewCell.m */,
 				AFA3299D25D0E3500065E54E /* DeviceStatusBehaveCell.h */,
+				AFA3299725D0E3500065E54E /* DeviceStatusBehaveCell.m */,
 				AFA3299E25D0E3500065E54E /* LabelTableViewCell.h */,
+				AFA3299625D0E3500065E54E /* LabelTableViewCell.m */,
 				AFA3299F25D0E3500065E54E /* StringTableViewCell.h */,
+				AFA3299925D0E3500065E54E /* StringTableViewCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -742,8 +777,8 @@
 			isa = PBXGroup;
 			children = (
 				AFA329A525D0E3500065E54E /* APModeTableViewController.h */,
-				AFA329A625D0E3500065E54E /* EZModeTableViewController.h */,
 				AFA329A725D0E3500065E54E /* APModeTableViewController.m */,
+				AFA329A625D0E3500065E54E /* EZModeTableViewController.h */,
 				AFA329A825D0E3500065E54E /* EZModeTableViewController.m */,
 				7DABC80D2653B5DE00DF5677 /* QRCodeModeTableViewController.h */,
 				7DABC80E2653B5DF00DF5677 /* QRCodeModeTableViewController.m */,
@@ -755,13 +790,13 @@
 			isa = PBXGroup;
 			children = (
 				AFA329AA25D0E3500065E54E /* LoginTableViewController.h */,
+				AFA329AF25D0E3500065E54E /* LoginTableViewController.m */,
+				AFA329AE25D0E3500065E54E /* RegisterTableViewController.h */,
 				AFA329AB25D0E3500065E54E /* RegisterTableViewController.m */,
+				AFA329B125D0E3500065E54E /* ResetPasswordTableViewController.h */,
 				AFA329AC25D0E3500065E54E /* ResetPasswordTableViewController.m */,
 				AFA329AD25D0E3500065E54E /* UserInformationTableViewController.h */,
-				AFA329AE25D0E3500065E54E /* RegisterTableViewController.h */,
-				AFA329AF25D0E3500065E54E /* LoginTableViewController.m */,
 				AFA329B025D0E3500065E54E /* UserInformationTableViewController.m */,
-				AFA329B125D0E3500065E54E /* ResetPasswordTableViewController.h */,
 			);
 			path = UserManagement;
 			sourceTree = "<group>";
@@ -991,17 +1026,20 @@
 				"${PODS_CONFIGURATION_BUILD_DIR}/TYHybridContainer/TYHybridContainer.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/TYNavigationController/TYNavigationRes.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/TYSmartActionDialog/TYSmartActionDialog.bundle",
-				"${PODS_ROOT}/TYSmartBusinessLibrary/TYSmartBusinessLibrary-3.23.5.2-tybizbundle-1/Assets/resources/cell_view_arrow@2x.png",
-				"${PODS_ROOT}/TYSmartBusinessLibrary/TYSmartBusinessLibrary-3.23.5.2-tybizbundle-1/Assets/resources/cell_view_arrow@3x.png",
+				"${PODS_ROOT}/TYSmartBusinessLibrary/TYSmartBusinessLibrary-3.23.5.4-tybizbundle/Assets/resources/cell_view_arrow@2x.png",
+				"${PODS_ROOT}/TYSmartBusinessLibrary/TYSmartBusinessLibrary-3.23.5.4-tybizbundle/Assets/resources/cell_view_arrow@3x.png",
 				"${PODS_CONFIGURATION_BUILD_DIR}/TYSmartBusinessLibrary/TPViews.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/TYSmartBusinessLibrary/TYSmartBusinessLibraryRes.bundle",
-				"${PODS_ROOT}/TYUrlPredefined/TYUrlPredefined-0.2.100/Assets/resources/ty_route_config.json",
+				"${PODS_CONFIGURATION_BUILD_DIR}/TYUIKit/TYUIKitLibraryRes.bundle",
+				"${PODS_ROOT}/TYUrlPredefined/TYUrlPredefined-0.2.102/Assets/resources/ty_route_config.json",
 				"${PODS_CONFIGURATION_BUILD_DIR}/TYVideoPlayer/TYVideoPlayer.bundle",
-				"${PODS_ROOT}/TuyaSmartBaseKit/ios/TuyaSmartBaseKit.framework/Versions/A/Resources/cerficate_v2",
-				"${PODS_ROOT}/TuyaSmartBizCore/TuyaSmartBizCore-3.25.0/Assets/resources/custom.json",
+				"${PODS_ROOT}/TuyaCameraAutomation/Build/TuyaCameraAutomation.xcframework/ios-arm64_armv7/TuyaCameraAutomation.framework/CustomResources/Assets/TYCameraAutomation.bundle",
+				"${PODS_ROOT}/TuyaCloudStorageDebugger/Build/TuyaCloudStorageDebugger.xcframework/ios-arm64_armv7/TuyaCloudStorageDebugger.framework/CustomResources/Bundles/TuyaCloudStorageDebugger.bundle",
+				"${PODS_ROOT}/TuyaSmartBizCore/TuyaSmartBizCore-3.27.5.3-rc.1/Assets/resources/custom.json",
 				"${PODS_CONFIGURATION_BUILD_DIR}/TuyaSmartBizCore/TuyaSmartBizCore.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/TuyaSmartCloudServiceBizBundle/TuyaSmartCloudServiceBizBundle.bundle",
 				"${PODS_ROOT}/TuyaSmartDefaultPanelKit/ios/TuyaSmartDefaultPanelKit.framework/Versions/A/Resources/TuyaSmartDefaultPanel.bundle",
+				"${PODS_ROOT}/TuyaSmartNetworkKit/ios/TuyaSmartNetworkKit.framework/Versions/A/Resources/cerficate_v2",
 				"${PODS_ROOT}/TuyaSmartUtil/Carthage/Build/iOS/TuyaSmartUtil.framework/TuyaSmartUtil.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -1017,13 +1055,16 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/cell_view_arrow@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TPViews.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TYSmartBusinessLibraryRes.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TYUIKitLibraryRes.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ty_route_config.json",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TYVideoPlayer.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/cerficate_v2",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TYCameraAutomation.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TuyaCloudStorageDebugger.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/custom.json",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TuyaSmartBizCore.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TuyaSmartCloudServiceBizBundle.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TuyaSmartDefaultPanel.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/cerficate_v2",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TuyaSmartUtil.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1060,13 +1101,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TuyaSmartIPCDemo_Example/Pods-TuyaSmartIPCDemo_Example-frameworks.sh",
+				"${PODS_ROOT}/TuyaAudioEngineSDK/Carthage/Build/iOS/TuyaAudioEngineSDK.framework",
 				"${PODS_ROOT}/TuyaCameraSDK/Carthage/Build/iOS/TuyaCameraSDK.framework",
+				"${PODS_ROOT}/TuyaFFmpegWrapper/Carthage/Build/iOS/TuyaFFmpegWrapper.framework",
+				"${PODS_ROOT}/TuyaP2PSDK/Carthage/Build/iOS/TuyaP2PSDK.framework",
 				"${PODS_ROOT}/TuyaSmartQUIC/Carthage/Build/iOS/TuyaSmartQUIC.framework",
 				"${PODS_ROOT}/TuyaSmartUtil/Carthage/Build/iOS/TuyaSmartUtil.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuyaAudioEngineSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuyaCameraSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuyaFFmpegWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuyaP2PSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuyaSmartQUIC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuyaSmartUtil.framework",
 			);
@@ -1085,6 +1132,7 @@
 				AFA329BD25D0E3500065E54E /* AppDelegate.m in Sources */,
 				AFA329EA25D0E3500065E54E /* EZModeTableViewController.m in Sources */,
 				AFA329BE25D0E3500065E54E /* SceneDelegate.m in Sources */,
+				7D4511D5270FE77000F47F78 /* CameraCollectionPointListCell.m in Sources */,
 				7D8E19AB2633AE39002D481F /* CameraCloudViewController.m in Sources */,
 				AFA329E625D0E3500065E54E /* DeviceListTableViewController.m in Sources */,
 				AFA329E925D0E3500065E54E /* APModeTableViewController.m in Sources */,
@@ -1093,9 +1141,11 @@
 				AFA329D925D0E3500065E54E /* Home.m in Sources */,
 				7D9DAD42264A584900975870 /* CameraDoorbellManager.m in Sources */,
 				7DABC8272653CD9100DF5677 /* UIImage+TYQRCode.m in Sources */,
+				7D4511DA2710203400F47F78 /* CameraCruiseView.m in Sources */,
 				AFA3294225D0E33C0065E54E /* main.m in Sources */,
 				7D8E19AA2633AE39002D481F /* CameraViewController.m in Sources */,
 				7D8E19B42633AE39002D481F /* CameraCloudDayCollectionViewCell.m in Sources */,
+				7D4511D0270FE4F500F47F78 /* CameraCollectionPointListView.m in Sources */,
 				7D8E19AE2633AE39002D481F /* CameraMessageViewController.m in Sources */,
 				AFA329EE25D0E3500065E54E /* UserInformationTableViewController.m in Sources */,
 				7D5492D026565C82008C5AC4 /* CameraDoorbellViewController.m in Sources */,
@@ -1109,6 +1159,7 @@
 				7DABC80F2653B5DF00DF5677 /* QRCodeModeTableViewController.m in Sources */,
 				AFA329E125D0E3500065E54E /* EnumTableViewCell.m in Sources */,
 				AFA329EC25D0E3500065E54E /* ResetPasswordTableViewController.m in Sources */,
+				7D558820270303F800D7B38A /* CameraPTZControlView.m in Sources */,
 				7DA8796E264E578400C5275C /* CameraVideoView.m in Sources */,
 				AFA329ED25D0E3500065E54E /* LoginTableViewController.m in Sources */,
 				AFA329DC25D0E3500065E54E /* NewHomeTableViewController.m in Sources */,
@@ -1120,6 +1171,7 @@
 				AFA329EF25D0E3500065E54E /* MainViewController.m in Sources */,
 				AFA329E525D0E3500065E54E /* StringTableViewCell.m in Sources */,
 				7D8E19B32633AE39002D481F /* CameraSwitchCell.m in Sources */,
+				7D4511DF27104A7C00F47F78 /* CameraCruiseSelectView.m in Sources */,
 				AFA329DD25D0E3500065E54E /* HomeDetailTableViewController.m in Sources */,
 				AFA329DB25D0E3500065E54E /* EditHomeTableViewController.m in Sources */,
 				AFA329E325D0E3500065E54E /* DeviceStatusBehaveCell.m in Sources */,
@@ -1128,7 +1180,9 @@
 				AFA329DA25D0E3500065E54E /* SwitchHomeTableViewController.m in Sources */,
 				AFA329EB25D0E3500065E54E /* RegisterTableViewController.m in Sources */,
 				7D8E19AC2633AE39002D481F /* CameraSDCardViewController.m in Sources */,
+				7D55881B2702C8AD00D7B38A /* CameraBottomSwitchView.m in Sources */,
 				AFA329E425D0E3500065E54E /* SliderTableViewCell.m in Sources */,
+				7DBAA9AE271148E30062ECF2 /* CameraCustomTimeView.m in Sources */,
 				7D8E19A62633AE39002D481F /* CloudTimePieceModel+Timeline.m in Sources */,
 				AFA329F225D0E3500065E54E /* NotificationName.m in Sources */,
 				7D8E19B22633AE39002D481F /* CameraControlButton.m in Sources */,

@@ -846,3 +846,39 @@
 "Dollbell is ringing timeOut" = "Dollbell is ringing timeOut";
 "The device has canceled doorbell ringing" = "The device has canceled doorbell ringing";
 
+// PTZ
+"Main" = "Main";
+"PTZ" = "PTZ";
+"Collection Points" = "Collection Points";
+"Cruise" = "Cruise";
+"UP" = "UP";
+"DOWN" = "DOWN";
+"LEFT" = "LEFT";
+"RIGHT" = "RIGHT";
+"ZOOM IN" = "ZOOM IN";
+"ZOOM OUT" = "ZOOM OUT";
+"Add Collection Point" = "Add Collection Point";
+"Saved As Preset1" = "Saved As Preset1";
+"Saved As Preset2" = "Saved As Preset2";
+"Cancel" = "Cancel";
+"Success" = "Success";
+"remove" = "Remove";
+"Panoramic" = "Panoramic";
+"All Day" = "All Day";
+"Custom Time" = "Custom Time";
+"Motion Detect" = "Motion Detect";
+"Open Cruise" = "Open Cruise";
+"Cruise Mode" = "Cruise Mode";
+"Cruise Time" = "Cruise Time";
+"Start Time" = "Start Time";
+"End Time" = "End Time";
+"Input Name" = "Input Name";
+
+
+
+
+
+
+
+
+

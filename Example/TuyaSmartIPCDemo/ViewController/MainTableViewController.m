@@ -7,6 +7,8 @@
 #import "MainTableViewController.h"
 #import "Alert.h"
 #import "Home.h"
+#import <TuyaCloudStorageDebugger/TuyaCloudStorageDebugger.h>
+#import <TuyaCameraAutomation/TuyaCameraAutomation.h>
 
 @interface MainTableViewController ()
 
@@ -27,6 +29,9 @@
     [super viewDidAppear:animated];
     if ([Home getCurrentHome]) {
         self.currentHomeLabel.text = [Home getCurrentHome].name;
+    }
+    if (@available(iOS 11.0, *)) {
+        self.navigationController.navigationBar.prefersLargeTitles = YES;
     }
 }
 
@@ -69,6 +74,17 @@
     [tableView deselectRowAtIndexPath:indexPath animated:true];
     if (indexPath.section == 0 && indexPath.row == 1) {
         [self logoutTapped:self.logoutButton];
+    } else if (indexPath.section == 4) {
+        if (indexPath.row == 0) {
+            [[TuyaCloudStorageDebugger sharedInstance] startWithDeviceSpaceId:[Home getCurrentHome].homeId navigationController:self.navigationController];
+        }else if (indexPath.row == 1) {
+            UIViewController *vc = [[TYCameraAutomationPublicViewController alloc] initWithHomeId:[Home getCurrentHome].homeId];
+            [self.navigationController pushViewController:vc animated:YES];
+            
+        }
+        if (@available(iOS 11.0, *)) {
+            self.navigationController.navigationBar.prefersLargeTitles = NO;
+        }
     }
 }
 

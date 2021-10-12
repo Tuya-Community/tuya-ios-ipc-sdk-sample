@@ -7,7 +7,6 @@
 #import "CameraCloudViewController.h"
 #import "CameraCloudDayCollectionViewCell.h"
 #import "CameraPermissionUtil.h"
-#import <SDWebImage/UIImageView+WebCache.h>
 #import <TuyaSmartCameraKit/TuyaSmartCameraKit.h>
 #import <TYEncryptImage/TYEncryptImage.h>
 #import <TuyaCameraUIKit/TuyaCameraUIKit.h>

@@ -14,4 +14,8 @@
 
 #define HEXCOLOR(rgbValue) HEXCOLORA(rgbValue, 1.0)
 
+#define IsIphoneX (([UIScreen mainScreen].bounds.size.height/[UIScreen mainScreen].bounds.size.width*100) == 216 || ([UIScreen mainScreen].bounds.size.width/[UIScreen mainScreen].bounds.size.height*100) == 216)
+
+#define IphoneXSafeBottomMargin 34.0
+
 #endif

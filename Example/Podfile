@@ -9,6 +9,8 @@ target 'TuyaSmartIPCDemo_Example' do
   pod 'TuyaSmartCameraKit'
   pod "TuyaCameraUIKit"
   pod 'TuyaSmartCloudServiceBizBundle'
+  pod 'TuyaCloudStorageDebugger'
+  pod 'TuyaCameraAutomation'
   
   pod 'SVProgressHUD'
    

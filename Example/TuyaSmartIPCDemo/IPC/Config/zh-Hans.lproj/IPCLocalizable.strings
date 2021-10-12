@@ -838,10 +838,39 @@
 "QRCodeActivatorMode" = "二维码配网模式";
 "QRCodeActivatorTip" = "提示：请先长按设备重置按钮5秒左右，等指示灯进入快闪状态后，再点击右上角的 '生成二维码' 按钮";
 
-// 门铃
+// DoorBell
 "Dollbell is ringing" = "门铃呼叫中";
 "Answer" = "接听";
 "Hangup" = "挂断";
 "DollBell answered success" = "门铃接听成功";
 "Dollbell is ringing timeOut" = "门铃呼叫超时";
 "The device has canceled doorbell ringing" = "设备主动取消门铃呼叫";
+
+// PTZ
+"Main" = "主功能";
+"PTZ" = "云台";
+"Collection Points" = "收藏点";
+"Cruise" = "巡航";
+"UP" = "上";
+"DOWN" = "下";
+"LEFT" = "左";
+"RIGHT" = "右";
+"ZOOM IN" = "放大";
+"ZOOM OUT" = "缩小";
+"Add Collection Point" = "添加收藏点";
+"Saved As Preset1" = "保存为预设点1";
+"Saved As Preset2" = "保存为预设点2";
+"Cancel" = "取消";
+"Success" = "成功";
+"remove" = "移除";
+"Panoramic" = "全景";
+"All Day" = "全天";
+"Custom Time" = "自定义时间";
+"Motion Detect" = "移动侦测";
+"Open Cruise" = "开启巡航";
+"Cruise Mode" = "巡航模式";
+"Cruise Time" = "巡航时间";
+"Start Time" = "开始时间";
+"End Time" = "结束时间";
+"Input Name" = "请输入名称";
+

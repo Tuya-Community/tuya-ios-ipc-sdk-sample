@@ -42,3 +42,12 @@
 
 /* Class = "UILabel"; text = "QRCode Mode"; ObjectID = "Tdj-SB-AZF"; */
 "Tdj-SB-AZF.text" = "二维码模式";
+
+/* Class = "UITableViewSection"; headerTitle = "Debug"; ObjectID = "FFh-zp-gzC"; */
+"FFh-zp-gzC.headerTitle" = "调试";
+
+/* Class = "UILabel"; text = "Cloud Storage Debugger"; ObjectID = "wlt-ov-rcp"; */
+"wlt-ov-rcp.text" = "云存储调试";
+
+/* Class = "UILabel"; text = "IPC SDK Automation"; ObjectID = "60i-PS-fkp"; */
+"60i-PS-fkp.text" = "IPC SDK 自动化";

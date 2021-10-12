@@ -14,9 +14,14 @@
 #import <TuyaSmartCameraM/TuyaSmartCameraM.h>
 #import <AVFoundation/AVFoundation.h>
 #import "CameraVideoView.h"
+#import "CameraBottomSwitchView.h"
+#import "CameraPTZControlView.h"
+#import "CameraCollectionPointListView.h"
+#import "CameraCruiseView.h"
 
 #define VideoViewWidth [UIScreen mainScreen].bounds.size.width
 #define VideoViewHeight ([UIScreen mainScreen].bounds.size.width / 16 * 9)
+#define BottomSwitchViewHeight 44.0
 
 #define kControlTalk        @"talk"
 #define kControlRecord      @"record"
@@ -25,11 +30,21 @@
 #define kControlCloud       @"Cloud"
 #define kControlMessage     @"message"
 
-@interface CameraViewController ()<TuyaSmartCameraDelegate, CameraControlViewDelegate, TuyaSmartCameraDPObserver>
+@interface CameraViewController ()<CameraBottomSwitchViewDelegate, TuyaSmartCameraDelegate, CameraControlViewDelegate, TuyaSmartCameraDPObserver, UIScrollViewDelegate>
 
 @property (nonatomic, strong) NSString *devId;
 
 @property (nonatomic, strong) UIView *videoContainer;
+
+@property (nonatomic, strong) CameraBottomSwitchView *bottomSwitchView;
+
+@property (nonatomic, strong) UIScrollView *bodyScrollView;
+
+@property (nonatomic, strong) CameraPTZControlView *ptzControlView;
+
+@property (nonatomic, strong) CameraCollectionPointListView *cpView;
+
+@property (nonatomic, strong) CameraCruiseView *cruiseView;
 
 @property (nonatomic, strong) CameraControlView *controlView;
 
@@ -112,7 +127,14 @@
     [self.view addSubview:self.indicatorView];
     [self.view addSubview:self.stateLabel];
     [self.view addSubview:self.retryButton];
-    [self.view addSubview:self.controlView];
+    [self.view addSubview:self.bottomSwitchView];
+    [self.view addSubview:self.bodyScrollView];
+    [self.bodyScrollView addSubview:self.controlView];
+    [self.bodyScrollView addSubview:self.ptzControlView];
+    [self.bodyScrollView addSubview:self.cpView];
+    [self.bodyScrollView addSubview:self.cruiseView];
+    [self.bodyScrollView layoutIfNeeded];
+    
     [self.view addSubview:self.soundButton];
     [self.view addSubview:self.hdButton];
     
@@ -494,6 +516,16 @@
     }
 }
 
+#pragma mark - CameraBottomSwitchViewDelegate
+- (void)didClickBottomButton:(CameraBottomSwitchView *)switchView buttonType:(CameraBottomButtonType)buttonType {
+    NSInteger page = (NSInteger)buttonType;
+    CGPoint offset = CGPointMake([UIScreen mainScreen].bounds.size.width * page, 0);
+    [self.bodyScrollView setContentOffset:offset animated:YES];
+    if (page==2) {
+        [self.cpView refreshUI];
+    }
+}
+
 #pragma mark - Private
 
 - (void)audioAttributesMap:(NSDictionary *)attributes {
@@ -594,16 +626,76 @@
              ];
 }
 
+- (CameraBottomSwitchView *)bottomSwitchView {
+    if (!_bottomSwitchView) {
+        CGFloat width = UIScreen.mainScreen.bounds.size.width;
+        CGFloat height = IsIphoneX ? IphoneXSafeBottomMargin + BottomSwitchViewHeight : BottomSwitchViewHeight;
+        _bottomSwitchView = [[CameraBottomSwitchView alloc] initWithFrame:CGRectMake(0, UIScreen.mainScreen.bounds.size.height-height, width, height)];
+        _bottomSwitchView.delegate = self;
+    }
+    return _bottomSwitchView;
+}
+
+- (UIScrollView *)bodyScrollView {
+    if (!_bodyScrollView) {
+        CGFloat top = VideoViewHeight + APP_TOP_BAR_HEIGHT;
+        CGFloat width = UIScreen.mainScreen.bounds.size.width;
+        CGFloat bottomSwitchViewHeight = IsIphoneX ? IphoneXSafeBottomMargin + BottomSwitchViewHeight : BottomSwitchViewHeight;
+        CGFloat height = UIScreen.mainScreen.bounds.size.height - top - bottomSwitchViewHeight;
+        _bodyScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, top, width, height)];
+        _bodyScrollView.contentSize = CGSizeMake(UIScreen.mainScreen.bounds.size.width*4, height);
+        _bodyScrollView.pagingEnabled = YES;
+        _bodyScrollView.delegate = self;
+        _bodyScrollView.showsVerticalScrollIndicator = NO;
+        _bodyScrollView.showsHorizontalScrollIndicator = NO;
+    }
+    return _bodyScrollView;
+}
+
 - (CameraControlView *)controlView {
     if (!_controlView) {
         CGFloat top = VideoViewHeight + APP_TOP_BAR_HEIGHT;
-        CGFloat width = self.view.frame.size.width;
-        CGFloat height = self.view.frame.size.height - top;
-        _controlView = [[CameraControlView alloc] initWithFrame:CGRectMake(0, top, width, height)];
+        CGFloat bottomSwitchViewHeight = IsIphoneX ? IphoneXSafeBottomMargin + BottomSwitchViewHeight : BottomSwitchViewHeight;
+        CGFloat height = UIScreen.mainScreen.bounds.size.height - top - bottomSwitchViewHeight;
+        _controlView = [[CameraControlView alloc] initWithFrame:CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, height)];
         _controlView.sourceData = [self controlDatas];
         _controlView.delegate = self;
     }
     return _controlView;
+}
+
+- (CameraPTZControlView *)ptzControlView {
+    if (!_ptzControlView) {
+        CGFloat top = VideoViewHeight + APP_TOP_BAR_HEIGHT;
+        CGFloat bottomSwitchViewHeight = IsIphoneX ? IphoneXSafeBottomMargin + BottomSwitchViewHeight : BottomSwitchViewHeight;
+        CGFloat height = UIScreen.mainScreen.bounds.size.height - top - bottomSwitchViewHeight;
+        _ptzControlView = [[CameraPTZControlView alloc] initWithFrame:CGRectMake(UIScreen.mainScreen.bounds.size.width, 0, UIScreen.mainScreen.bounds.size.width, height)];
+        _ptzControlView.deviceId = _devId;
+        _ptzControlView.fatherVc = self;
+    }
+    return _ptzControlView;
+}
+
+- (CameraCollectionPointListView *)cpView {
+    if (!_cpView) {
+        CGFloat top = VideoViewHeight + APP_TOP_BAR_HEIGHT;
+        CGFloat bottomSwitchViewHeight = IsIphoneX ? IphoneXSafeBottomMargin + BottomSwitchViewHeight : BottomSwitchViewHeight;
+        CGFloat height = UIScreen.mainScreen.bounds.size.height - top - bottomSwitchViewHeight;
+        _cpView = [[CameraCollectionPointListView alloc] initWithFrame:CGRectMake(UIScreen.mainScreen.bounds.size.width * 2, 0, UIScreen.mainScreen.bounds.size.width, height)];
+        _cpView.deviceId = _devId;
+    }
+    return _cpView;
+}
+
+- (CameraCruiseView *)cruiseView {
+    if (!_cruiseView) {
+        CGFloat top = VideoViewHeight + APP_TOP_BAR_HEIGHT;
+        CGFloat bottomSwitchViewHeight = IsIphoneX ? IphoneXSafeBottomMargin + BottomSwitchViewHeight : BottomSwitchViewHeight;
+        CGFloat height = UIScreen.mainScreen.bounds.size.height - top - bottomSwitchViewHeight;
+        _cruiseView = [[CameraCruiseView alloc] initWithFrame:CGRectMake(UIScreen.mainScreen.bounds.size.width * 3, 0, UIScreen.mainScreen.bounds.size.width, height)];
+        _cruiseView.deviceId = _devId;
+    }
+    return _cruiseView;
 }
 
 - (UIButton *)soundButton {
