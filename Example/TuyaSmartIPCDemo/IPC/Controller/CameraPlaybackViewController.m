@@ -161,6 +161,7 @@ typedef NSArray<NSDictionary *> TYDictArray;
 }
 
 - (void)didEnterBackground {
+    self.connected = NO;
     [self stopPlayback];
 }
 
