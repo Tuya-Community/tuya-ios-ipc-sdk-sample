@@ -89,6 +89,7 @@
 - (void)dealloc {
     [self disConnect];
     [self.cameraType destory];
+    [[TuyaSmartP2pChannel sharedInstance] deInitSDK];
 }
 
 - (instancetype)initWithDeviceId:(NSString *)devId {
@@ -97,6 +98,7 @@
         _device = [TuyaSmartDevice deviceWithDeviceId:devId];
         _dpManager = [[TuyaSmartCameraDPManager alloc] initWithDeviceId:devId];
         _cameraType = [TuyaSmartCameraFactory cameraWithP2PType:@(_device.deviceModel.p2pType) deviceId:_device.deviceModel.devId delegate:self];
+        [[TuyaSmartP2pChannel sharedInstance] initSDKWithUid:[TuyaSmartUser sharedInstance].uid];
         _muted = YES;
         _lastMuted = _muted;
         _videoView = [[CameraVideoView alloc] initWithFrame:CGRectZero];
