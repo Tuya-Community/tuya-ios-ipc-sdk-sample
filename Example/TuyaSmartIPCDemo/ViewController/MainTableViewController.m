@@ -10,6 +10,8 @@
 #import <TuyaCloudStorageDebugger/TuyaCloudStorageDebugger.h>
 #import <TuyaCameraAutomation/TuyaCameraAutomation.h>
 
+#import <TuyaSmartCameraBase/TuyaSmartCameraBase.h>
+
 @interface MainTableViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *logoutButton;
@@ -51,6 +53,9 @@
     UIAlertController *alertViewController = [UIAlertController alertControllerWithTitle:nil message:NSLocalizedString(@"You're going to log out this account.", @"User tapped the logout button.") preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertAction *logoutAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Logout", nil) style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
         [[TuyaSmartUser sharedInstance] loginOut:^{
+            
+            [TuyaSmartCameraFactory userDidLogOut];
+
             UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             UINavigationController *nav = [mainStoryboard instantiateInitialViewController];
             [UIApplication sharedApplication].keyWindow.rootViewController = nav;
